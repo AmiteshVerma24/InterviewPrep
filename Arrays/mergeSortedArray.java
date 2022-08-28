@@ -3,7 +3,6 @@ package Arrays;
 // a1 = {1 , 3 , 4 , 5}  , a2 = {2 , 6 , 7 ,8}
 // O/P=>
 // a = {1 , 2 , 3 , 4 , 5 , 6 , 7 ,8}
-
 public class mergeSortedArray {
     static void merge(){
         // Taking two arrays
@@ -43,3 +42,4 @@ public class mergeSortedArray {
         merge();
     }    
 }
+// Testing git
