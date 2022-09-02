@@ -1,5 +1,9 @@
 package Arrays;
 
+
+// I/P -> {3 ,-2 ,4 ,-7 , 1 , 5 , -10}
+// O/P -> {-2 ,-7 ,-10, 3, 4, 1, 5}
+
 public class rearrangePositiveNegative {
 
     static void rearrange(int [] arr){

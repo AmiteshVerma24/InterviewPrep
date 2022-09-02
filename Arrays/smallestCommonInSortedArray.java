@@ -8,7 +8,6 @@ package Arrays;
 public class smallestCommonInSortedArray {
     static void findSmallest(int[] a1, int[] a2, int[] a3){
         int p1=0 ,p2=0 ,p3=0;
-        int value;
         while (p1<a1.length && p2<a2.length && p3<a3.length){
             if (a1[p1] < a2[p2] && a1[p1] < a3[p3]){
                 p1++;
