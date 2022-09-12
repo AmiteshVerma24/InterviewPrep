@@ -40,6 +40,20 @@ public class linkedlist {
         size++;
     }
 
+    // Search node
+    public int search(int value){
+        Node pointer = headNode;
+        int index = 1;
+        while (pointer.nextNode != null){
+            if (pointer.data == value){
+                return index;
+            }
+            pointer = pointer.nextNode;
+            index++;
+        }
+        return -1;
+    }
+
     // Print list
     public void printList(){
         Node currentNode = headNode;
@@ -61,7 +75,10 @@ public class linkedlist {
         myLinkedList.printList();
 
         myLinkedList.insertAtEnd(100);
-        myLinkedList.printList();
+
+        if(myLinkedList.search(5)!= -1){
+            System.out.println("Element found at index " + myLinkedList.search(5));
+        };
 
     }
 }
