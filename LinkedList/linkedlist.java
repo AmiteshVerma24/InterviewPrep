@@ -30,6 +30,7 @@ public class linkedlist {
         while (currentNode.nextNode != null){
             String value = Integer.toString(currentNode.data); 
             System.out.print(value + " -> ");
+            currentNode = currentNode.nextNode;
         }
         String value = Integer.toString(currentNode.data);
         System.out.print(value + " -> NULL");
