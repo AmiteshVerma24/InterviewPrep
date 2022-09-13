@@ -67,17 +67,21 @@ public class linkedlist {
     }
     
     public static void main(String[] args) {
+        int searchValue = 8;
+        int insertValue = 10;
         linkedlist myLinkedList = new linkedlist();
+        System.out.println("\nThe linked list is:");
         for (int i = 0 ; i < 10 ; i++){
             myLinkedList.insertAtHead(i);
             myLinkedList.printList();
         }
+
+        myLinkedList.insertAtEnd(insertValue);
+        System.out.println("\nThe linked list after inserting " + insertValue + " is:");
         myLinkedList.printList();
 
-        myLinkedList.insertAtEnd(100);
-
-        if(myLinkedList.search(5)!= -1){
-            System.out.println("Element found at index " + myLinkedList.search(5));
+        if(myLinkedList.search(searchValue)!= -1){
+            System.out.println("\nElement "+ searchValue + " found at index " + myLinkedList.search(searchValue));
         };
 
     }
