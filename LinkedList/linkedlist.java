@@ -19,6 +19,14 @@ public class linkedlist {
         size = 0;
     }
 
+    // To check if linked list is empty or not
+    public boolean isEmpty(){
+        if (headNode == null){
+            return true;
+        }
+        return false;
+    }
+
     // Insert at head
     public void insertAtHead(int value){
         Node newNode = new Node(value);     // Creating new node
@@ -54,6 +62,34 @@ public class linkedlist {
         return -1;
     }
 
+    // Delete at head
+    public void deleteAtHead(){
+        headNode = headNode.nextNode;
+        size--;
+    }
+
+    // Delete element by value
+    public void deleteByValue(int value){
+        Node prevNode = null;
+        Node currentNode = headNode;
+
+        if (currentNode.data == value){
+            deleteAtHead();
+            size--;
+            return;
+        }
+
+        while (currentNode.nextNode != null){
+            if (currentNode.data == value){
+                prevNode.nextNode = currentNode.nextNode;
+                size--;
+                return;
+            }
+            prevNode = currentNode;
+            currentNode = currentNode.nextNode;
+        }
+    }
+
     // Print list
     public void printList(){
         Node currentNode = headNode;
@@ -83,6 +119,18 @@ public class linkedlist {
         if(myLinkedList.search(searchValue)!= -1){
             System.out.println("\nElement "+ searchValue + " found at index " + myLinkedList.search(searchValue));
         };
+
+        if (myLinkedList.isEmpty()){
+            System.out.println("Empty");
+        }
+
+        myLinkedList.insertAtHead(2);
+
+        myLinkedList.deleteAtHead();
+        myLinkedList.printList();
+
+        myLinkedList.deleteByValue(8);
+        myLinkedList.printList();
 
     }
 }
