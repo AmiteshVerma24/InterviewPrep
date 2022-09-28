@@ -9,11 +9,8 @@ public class rearrangePositiveNegative {
     static void rearrange(int [] arr){
         // New array to store the rearrange array
         int [] new_arr = new int[arr.length]; 
-        // Taking count of number of negative elements
-        int neg = 0; 
         for (int i = 0 ; i < arr.length ; i++){
             if (arr[i] < 0){
-                neg++;
             }
         }
         // Rearraning the array
