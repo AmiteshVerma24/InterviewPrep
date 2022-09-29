@@ -30,9 +30,10 @@ public class doublyLinkedList {
         return false;
     }
 
+    // Insert at head
     public void insertAtHead(int value){
         Node newNode = new Node(value);             // New node to be added at start
-        newNode.nextNode = headNode;                // Linking new Node with prev head Node
+        newNode.nextNode = this.headNode;                // Linking new Node with prev head Node
         newNode.prevNode = null;                    // Making prev Node of new head Node as null
         if (isEmpty()){                             // Function to link tail Node and prev Node of old head node
             tailNode = newNode;
@@ -40,21 +41,44 @@ public class doublyLinkedList {
         else{
             headNode.prevNode = newNode;
         }
-        headNode = newNode;                         // Updating the head Node
+        this.headNode = newNode;                         // Updating the head Node
+        size++;
     }
 
+    // Insert at end
+    public void insertAtTail(int value){
+        if (isEmpty()){
+            insertAtHead(value);
+            return;
+        }
+        Node newNode = new Node(value);
+        tailNode.nextNode = newNode;
+        newNode.prevNode = this.tailNode;
+        newNode.nextNode = null;
+        this.tailNode = newNode;
+        size++;
+    }
+
+    // Delete at head
+    public void deleteAtHead(){
+
+    }
+
+    // Print the linked list
     public void printLinkedList(){
         if (isEmpty()){
             System.out.println("The Double Linked List is Empty.");
             return;
         }
-        Node pointer = headNode;
-        System.out.print("null <-> ");        
-        while (pointer.nextNode != null){
-            System.out.print(pointer.data + " <-> ");
-            pointer = pointer.nextNode;
+        System.out.print("NULL<-> "); 
+        Node currentNode = headNode;
+        while (currentNode.nextNode != null){
+            String value = Integer.toString(currentNode.data); 
+            System.out.print(value + " <-> ");
+            currentNode = currentNode.nextNode;
         }
-        System.out.print("null");   
+        String value = Integer.toString(currentNode.data);
+        System.out.print(value + " <-> NULL\n"); 
     }
 
 
@@ -62,6 +86,10 @@ public class doublyLinkedList {
         doublyLinkedList dll = new doublyLinkedList();
         for (int i = 0 ; i < 10 ; i++){
             dll.insertAtHead(i);
+        }
+        System.out.println(dll.tailNode.data);
+        for (int i = 10 ; i <= 14 ; i++){
+            dll.insertAtTail(i);
         }
         dll.printLinkedList();
     }
