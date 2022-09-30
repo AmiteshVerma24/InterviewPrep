@@ -87,6 +87,21 @@ public class doublyLinkedList {
         return -1;
     }
 
+    // Delete by value
+    public void delete(int value){
+        Node secondPointer = headNode.prevNode;
+        Node firstPointer = headNode;
+        while (firstPointer.nextNode != null){
+            if (firstPointer.data == value){
+                secondPointer.nextNode = firstPointer.nextNode;
+                firstPointer.nextNode.prevNode = secondPointer;
+                size--;
+            }
+            secondPointer = firstPointer;
+            firstPointer = firstPointer.nextNode;
+        }
+    }
+
     // Print the linked list
     public void printLinkedList(){
         if (isEmpty()){
@@ -120,7 +135,10 @@ public class doublyLinkedList {
         dll.printLinkedList();
 
         int valueToSearch = 5;
+        int valueToDelete = 6;
         System.out.println("Value found at " + dll.search(valueToSearch));
+        dll.delete(valueToDelete);
+        dll.printLinkedList();
 
 
     }
