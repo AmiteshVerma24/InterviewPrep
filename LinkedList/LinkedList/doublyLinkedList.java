@@ -61,7 +61,16 @@ public class doublyLinkedList {
 
     // Delete at head
     public void deleteAtHead(){
+        headNode = headNode.nextNode;
+        headNode.prevNode = null;
+        size--;
+    }
 
+    // Delete at tail
+    public void deleteAtTail(){
+        tailNode = tailNode.prevNode;
+        tailNode.nextNode = null;
+        size--;
     }
 
     // Print the linked list
@@ -92,6 +101,10 @@ public class doublyLinkedList {
             dll.insertAtTail(i);
         }
         dll.printLinkedList();
+
+        dll.deleteAtHead();
+        dll.printLinkedList();
+
     }
 
 }
