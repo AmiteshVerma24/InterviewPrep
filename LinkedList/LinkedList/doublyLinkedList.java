@@ -91,6 +91,10 @@ public class doublyLinkedList {
     public void delete(int value){
         Node secondPointer = headNode.prevNode;
         Node firstPointer = headNode;
+        if(firstPointer.data == value){
+            deleteAtHead();
+            return;
+        }
         while (firstPointer.nextNode != null){
             if (firstPointer.data == value){
                 secondPointer.nextNode = firstPointer.nextNode;
@@ -121,25 +125,15 @@ public class doublyLinkedList {
 
 
     public static void main(String[] args) {
+        // Creating new Double Linked List Object
         doublyLinkedList dll = new doublyLinkedList();
+        // Inserting values from 9-0 in the Double Linked List
         for (int i = 0 ; i < 10 ; i++){
             dll.insertAtHead(i);
         }
-        System.out.println(dll.tailNode.data);
-        for (int i = 10 ; i <= 14 ; i++){
-            dll.insertAtTail(i);
-        }
+        // Printing Initial Linked List
         dll.printLinkedList();
-
-        dll.deleteAtHead();
-        dll.printLinkedList();
-
-        int valueToSearch = 5;
-        int valueToDelete = 6;
-        System.out.println("Value found at " + dll.search(valueToSearch));
-        dll.delete(valueToDelete);
-        dll.printLinkedList();
-
+        
 
     }
 
