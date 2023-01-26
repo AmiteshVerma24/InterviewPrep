@@ -66,8 +66,51 @@ class binary_search_tree{
         }
         // All other cases
         Node currentNode = root;        // for traversing the binary search tree
+        while(currentNode != null){
+            // left insertion
+            if (value <= currentNode.getData()){
+                // checking if the left node is empty or not
+                if(currentNode.getLeftNode() == null){
+                    currentNode.setLeftNode(newNode);
+                }
+                currentNode = currentNode.getLeftNode();
+            }
+            // right insertion
+            else{
+                // checking if the right node is empty or not
+                if(currentNode.getRightNode() == null){
+                    currentNode.setRightNode(newNode);
+                }
+                currentNode = currentNode.getRightNode();
+            }
+        }
+    }
+    // Search elemnt in BST
+    public boolean search(int value){
+        // Testing for base case
+        if(isEmpty()){
+            System.out.println("Binary Search Tree is empty!");
+            return false;
+        }
+        // For all other cases
+        Node currentNode = root;
+        while(currentNode != null){
+            // Checking for value
+            if(currentNode.getData() == value){
+                System.out.format("The NODE with value %d exists in Binary Search Tree.",value);
+                return true;
+            }
+            // Traversing the Binary Search Tree
+            if(value <= currentNode.getData()){
+                currentNode = currentNode.getLeftNode();
+            }else{
+                currentNode = currentNode.getRightNode();
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
         
-
     }
 
 }
