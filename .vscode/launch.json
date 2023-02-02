@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch binary_search_tree",
+            "request": "launch",
+            "mainClass": "binary_search_tree",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "Launch assignment",
             "request": "launch",
             "mainClass": "assignment",
