@@ -3,7 +3,7 @@ import java.util.*;
 // Node class for holding info
 class Node{
     // Variables
-    private int data;
+    private Integer data;
     private Node leftNode;
     private Node rightNode;
     // Constructors
@@ -14,7 +14,7 @@ class Node{
     }
     // Helper functions
     public int getData(){
-        return data;
+        return this.data;
     }
     public Node getLeftNode(){
         return this.leftNode;
@@ -132,102 +132,78 @@ class binary_search_tree{
     }
     // Delete element in BST
     public boolean delete(int value){
-        // Testing for base case
-        if(isEmpty()){
-            System.out.println("Binary Search Tree is empty can't delete!");
+        // Declaring the current node and parent node
+        Node current_node = root;
+        Node parent_node = null;
+        // Base case where the BST is empty
+        if (isEmpty() == true){
+            System.out.println("The BST is empty can't delete.");
             return false;
         }
-        // Parent node to keep track of current node previous node
-        Node parent_node = null;
-        Node current_node = root;
-        // For traversing the binary tree and searching for the node to be deleted
-        while (current_node != null && current_node.getData() != value){
-            if (value < current_node.getLeftNode().getData()){
+        while (current_node != null){
+            // if value is lesser than current node value
+            if (value < current_node.getData()){
                 parent_node = current_node;
                 current_node = current_node.getLeftNode();
-            }else{
+            }
+            // if the value is greater than current node value
+            else if (value > current_node.getData()){
                 parent_node = current_node;
                 current_node = current_node.getRightNode();
             }
-        }
-        // if current node is null
-        if(current_node == null){
-            System.out.println("Can't delete node as it was null");
-            return false;
-        }
-        // when node to be deleted is a leaf node
-        else if(current_node.getLeftNode() == null && current_node.getRightNode() == null){
-            // check if the node to be deleted is root
-            if(root.getData() == current_node.getData()){
-                setRoot(null);
-                System.out.println("Root was deleted");
-                return true;
-            }
-            // parent_node.data > current_node.data -> deleteleft child
-            else if (current_node.getData() < parent_node.getData()){
-                System.out.format("Node deleted: %d",current_node.getData());
-                parent_node.setLeftNode(null);
-                return true;
-            }        
-            // parent_node.data < current_node.data -> delete right child        
-            else {
-                System.out.format("Node deleted: %d",current_node.getData());
-                parent_node.setRightNode(null);
-                return true;
-            }                                               
-        }
-        // when the node to be deleted has only one child
-        // 1. has only left subtree
-        else if(current_node.getRightNode() == null){
-            // if the node to be deleted is root
-            if(root.getData() == current_node.getData()){
-                setRoot(current_node.getLeftNode());
-                System.out.println("Root was updated");
-                return true;
-            }
-            // checking which child to connect parent node with
-            // parent_node.data > current_node.data --> link parent_node.left with current_node.left
-            else if(parent_node.getData() > current_node.getData()){
-                parent_node.setLeftNode(current_node.getLeftNode());
-                return true;
-            }
-            // parent_node.data < current_node.data -> link parent_node.right with current_node.left
+            // if the current node data is equal to the value to be deleted
             else{
-                parent_node.setRightNode(current_node.getLeftNode());
+                // Case 1: When the node to be deleted is leaf node
+                if(current_node.getLeftNode() == null && current_node.getRightNode() == null){
+                    System.out.format("Node deleted is: %d\nThe parent node is: %d\n",current_node.getData(),parent_node.getData());
+                    // Now to check which child left or right of the parent node is to be deleted
+                    if(parent_node.getData() < current_node.getData()){
+                        parent_node.setRightNode(null);
+                    }else{
+                        parent_node.setLeftNode(null);
+                    }
+                }
+                // Case 2: When the node to be deleted has only one child
+                else if(current_node.getLeftNode() == null){
+                    System.out.format("Node deleted is: %d\nThe parent node is: %d\n",current_node.getData(),parent_node.getData());
+                    // If the parent node data is less than current node data
+                    if (parent_node.getData() < current_node.getData()){
+                        parent_node.setRightNode(current_node.getRightNode());
+                    }
+                    // If the parent node data is greater than current node data
+                    else{
+                        parent_node.setLeftNode(current_node.getRightNode());
+                    }
+                }
+                else if(current_node.getRightNode() == null){
+                    System.out.format("Node deleted is: %d\nThe parent node is: %d\n",current_node.getData(),parent_node.getData());
+                    // if the parent node data is less than current node data
+                    if (parent_node.getData() < current_node.getData()){
+                        parent_node.setRightNode(current_node.getLeftNode());
+                    }
+                    // if the parent node data is greater than current node data
+                    else{
+                        parent_node.setLeftNode(current_node.getLeftNode());
+                    }
+
+                }
+                // Case 3: When the node to be deleted has two children
+                else{
+                    System.out.format("The node deleted is: %d\nThe parent node is: %d\n",current_node.getData(),parent_node.getData());
+                    // Finding the least node of the right subtree of the node to be deleted
+                    Node least_node_right_subtree = findLeastNode(current_node);
+                    // Storing the least node data into a temporary variable
+                    int temp_data = least_node_right_subtree.getData();
+                    // Deleting the least node of the right subtree of the soon to be deleted node
+                    delete(least_node_right_subtree.getData());
+                    // Setting the data of the current node with the least node data
+                    current_node.setData(temp_data);
+
+                }
                 return true;
             }
         }
-        // 2. has only right subtree
-        else if(current_node.getLeftNode() == null){
-            // if the node to be deleted is root
-            if(root.getData() == current_node.getData()){
-                setRoot(current_node.getRightNode());
-                System.out.println("Root was updated");
-                return true;
-            }
-            // checking which child to connect parent node with
-            // parent_node.data > current_node.data --> link parent_node.left with current_node.right
-            else if(parent_node.getData() > current_node.getData()){
-                System.out.format("Node deleted: %d",current_node.getData());
-                parent_node.setLeftNode(current_node.getRightNode());
-            }
-            // parent_node.data < current_node.data --> link parent_node.right with current_node.right
-            else{
-                parent_node.setRightNode(current_node.getRightNode());
-            }
-        }
-        // Has subtrees on both the sides
-        else{
-            // The least node of the right sub tree
-            Node leastNode = findLeastNode(current_node);
-            int tempData = leastNode.getData();
-            // Switching the data of the node to be deleted and least node
-            leastNode.setData(current_node.getData()) ;
-            current_node.setData(tempData);
-            // Deleting the least node by calling the delete function recursively
-            delete(leastNode.getData());
-            return true;
-        }
+        System.out.format("The element %d was not found in BST hece can't be deleted.",value);
         return false;
     }
     // Pre order traverse in BST
