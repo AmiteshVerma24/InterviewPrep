@@ -1,3 +1,4 @@
+package Trees;
 import java.util.*;
 
 // Node class for holding info
@@ -263,7 +264,7 @@ class binary_search_tree{
         binary_search_tree bst = new binary_search_tree();
         while(isContinue == 1){
             // Taking user input
-            System.out.print("\nWhat would you like to do?\n1.Insert a node\n2.Search for a node\n3.Delete a node\n4.Pre-order traverse\n5.In-order traverse\n6.Post-order traverse\nEnter your choice:- ");
+            System.out.print("\nWhat would you like to do?\n1.Insert a node\n2.Search for a node\n3.Delete a node\n4.Pre-order traverse\n5.In-order traverse\n6.Post-order traverse\n7.Exit\nEnter your choice:- ");
             choice = sc.nextInt();
             // Calling methods based on user input
             switch(choice){
@@ -293,6 +294,10 @@ class binary_search_tree{
                 case 6:
                     System.out.println("The Binary Search Tree in post-order form is:\n");
                     bst.post_order_traverse(bst.root);
+                    break;
+                case 7:
+                System.out.println("Exited the program.");
+                    isContinue = 0;
                     break;
                 default:
                     System.out.println("INVALID CHOICE!");
