@@ -1,4 +1,3 @@
-package Graphs;
 import java.util.*;
 
 public class graph {
@@ -79,11 +78,33 @@ public class graph {
         System.out.println("Stack is:- " + stack.toString());
         System.out.println("Depth first seach:- " + visited_list.toString());
     }
+    // Method to detect cycles in a graph
+    public void detect_cycle(int start){
+        // Visited array
+        Stack<Integer> visited_list = new Stack<>();
+        // Stack to traverse the graph
+        Stack<Integer> stack = new Stack<>();
+        // Push the start
+        stack.push(start);
+        // Traversing the graph
+        while(stack.isEmpty() == false){
+            int top = stack.pop();
+            visited_list.push(top);
+            Object[] arr = this.adjacency_list[top].toArray();      // Returns the neighbours of the top of the stack
+            for (int i = 0 ; i < arr.length ; i++){
+                if(visited_list.contains(arr[i]) == false){
+                    stack.push((Integer) arr[i]);
+                }
+            }
+        }
+        System.out.println("Stack is:- " + stack.toString());
+        System.out.println("Depth first seach:- " + visited_list.toString());
+    }
     public static void main(String[] args) {
-        graph g = new graph(5);
+        graph g = new graph(4);
         g.addEdge(0, 1);
         g.addEdge(0, 2);
-        g.addEdge(1,4);
+        g.addEdge(1,2);
         g.addEdge(1,3);
         g.addEdge(2,0);
         g.addEdge(2,3);
