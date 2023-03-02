@@ -1,4 +1,4 @@
-package Trees;
+
 import java.util.*;
 
 // Node class for holding info
@@ -303,6 +303,7 @@ class binary_search_tree{
                     System.out.println("INVALID CHOICE!");
             }
         }
+        sc.close();
     }
 
 }
