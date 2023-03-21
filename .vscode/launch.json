@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sorting_algorithms",
+            "request": "launch",
+            "mainClass": "Algorithms.sorting_algorithms",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "stack",
             "request": "launch",
             "mainClass": "stack",
