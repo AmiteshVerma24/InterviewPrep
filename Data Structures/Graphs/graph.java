@@ -33,28 +33,28 @@ public class graph {
     }
     // Method to print the graph in level wise manner
     public void breadth_first_search(int start){
+        // Final result
+        String result = "";
         // Visited array
-        Queue<Integer> visited_list = new LinkedList<>(); 
-        // Exploration queue to help traversing
-        Queue<Integer> exploration_queue = new LinkedList<>();
-        // Adding the node from which the graph has to be traversed
-        visited_list.add(start);
-        exploration_queue.add(start);
-        while(exploration_queue.isEmpty() == false){
-            // Pop the head of the queue
-            int element = exploration_queue.remove();
-            // Traversing the adjacency list to find the adjacent edges of the popped node
-            Object[] arr = this.adjacency_list[element].toArray();
-            for (int i = 0 ; i < arr.length ; i++){
-                if((visited_list.contains((Integer) arr[i]) == false)){
-                    visited_list.add((Integer) arr[i]);
-                    exploration_queue.add((Integer) arr[i]);
+        boolean[] visited_arr = new boolean [this.vertices];
+        // Queue which will help us to traverse
+        Queue<Integer> que = new LinkedList<Integer>();
+        // Adding the starting point of traversal
+        que.add(start);
+        visited_arr[start] = true;
+        // Traversing the graph
+        while(que.isEmpty() == false){
+            Integer removed = que.remove();
+            result += removed;
+            Integer[] array = this.adjacency_list[removed].toArray(new Integer[this.adjacency_list[removed].size()]);
+            for(int i = 0 ; i < array.length ; i++){
+                if(visited_arr[array[i]] == false){
+                    que.add(array[i]);
+                    visited_arr[array[i]] = true;
                 }
-                
             }
-            
         }
-        System.out.println("The Graph in breadth first manner is: "+visited_list.toString());
+        System.out.println("Breadth first search " + result);
     }
     // Method to print the graph in depth first search manner
     public void depth_first_search(int start){
@@ -86,6 +86,7 @@ public class graph {
         Stack<Integer> stack = new Stack<>();
         // Push the start
         stack.push(start);
+        int flag = 0;
         // Traversing the graph
         while(stack.isEmpty() == false){
             int top = stack.pop();
@@ -94,22 +95,35 @@ public class graph {
             for (int i = 0 ; i < arr.length ; i++){
                 if(visited_list.contains(arr[i]) == false){
                     stack.push((Integer) arr[i]);
+                }else{
+                    flag = 1;
                 }
             }
         }
         System.out.println("Stack is:- " + stack.toString());
         System.out.println("Depth first seach:- " + visited_list.toString());
+        if(flag == 1){
+            System.out.println("Cycle exist");
+        }else{
+            System.out.println("Cycle does not exist");
+        }
     }
     public static void main(String[] args) {
-        graph g = new graph(4);
+        graph g = new graph(6);
         g.addEdge(0, 1);
         g.addEdge(0, 2);
-        g.addEdge(1,2);
         g.addEdge(1,3);
-        g.addEdge(2,0);
-        g.addEdge(2,3);
+        g.addEdge(3,4);
+        g.addEdge(3,5);
+        g.addEdge(4,1);
+        // g.addEdge(5,0);
         g.print_adjacency_list();
         g.breadth_first_search(0);
         g.depth_first_search(0);
+        g.detect_cycle(0);
     }
 }
+
+// Here adjacency list looks like this
+//    0      1      2
+// [[1->2],[2->3],[0->3]]
