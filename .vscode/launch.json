@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "checkPalindrome",
+            "request": "launch",
+            "mainClass": "Questions.Functions_in_Java.checkPalindrome",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "printPrimeNumbers",
+            "request": "launch",
+            "mainClass": "Questions.Functions_in_Java.printPrimeNumbers",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pythagorean_triplet",
+            "request": "launch",
+            "mainClass": "Questions.Functions_in_Java.pythagorean_triplet",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "graph",
             "request": "launch",
             "mainClass": "graph",
