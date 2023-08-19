@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InfiniteArray",
+            "request": "launch",
+            "mainClass": "Questions.Searching.InfiniteArray",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "infiniteArray",
+            "request": "launch",
+            "mainClass": "Questions.Searching.infiniteArray",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "floor",
             "request": "launch",
             "mainClass": "Questions.Searching.floor",
