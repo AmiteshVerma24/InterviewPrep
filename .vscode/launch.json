@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "first_last_position",
+            "request": "launch",
+            "mainClass": "Questions.Searching.first_last_position",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "InfiniteArray",
             "request": "launch",
             "mainClass": "Questions.Searching.InfiniteArray",
