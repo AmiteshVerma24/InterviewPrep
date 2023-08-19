@@ -1,6 +1,6 @@
 package Algorithms;
 import java.util.*;
-import java.math.*;
+
 
 class random_number_generator{
     public int generate_random(){

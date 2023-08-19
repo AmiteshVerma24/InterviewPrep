@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InfiniteArray",
+            "request": "launch",
+            "mainClass": "Questions.Searching.InfiniteArray",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "infiniteArray",
+            "request": "launch",
+            "mainClass": "Questions.Searching.infiniteArray",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "floor",
+            "request": "launch",
+            "mainClass": "Questions.Searching.floor",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "ceil",
+            "request": "launch",
+            "mainClass": "Questions.Searching.ceil",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "binary_search",
+            "request": "launch",
+            "mainClass": "Algorithms.Searching.binary_search",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "checkPalindrome",
             "request": "launch",
             "mainClass": "Questions.Functions_in_Java.checkPalindrome",
