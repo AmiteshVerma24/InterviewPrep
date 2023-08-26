@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "search_insert_position",
+            "request": "launch",
+            "mainClass": "Questions.Searching.search_insert_position",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "kth_missing_number",
+            "request": "launch",
+            "mainClass": "Questions.Searching.kth_missing_number",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "valid_perfect_square",
+            "request": "launch",
+            "mainClass": "Questions.Searching.valid_perfect_square",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "two_sum_array_is_sorted",
+            "request": "launch",
+            "mainClass": "Questions.Searching.two_sum_array_is_sorted",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "first_bad_version",
+            "request": "launch",
+            "mainClass": "Questions.Searching.first_bad_version",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "guess_number",
+            "request": "launch",
+            "mainClass": "Questions.Searching.guess_number",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "sqrt_of_num",
+            "request": "launch",
+            "mainClass": "Questions.Searching.sqrt_of_num",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "peak_in_mountain_array",
+            "request": "launch",
+            "mainClass": "Questions.Searching.peak_in_mountain_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "first_last_position",
+            "request": "launch",
+            "mainClass": "Questions.Searching.first_last_position",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "InfiniteArray",
             "request": "launch",
             "mainClass": "Questions.Searching.InfiniteArray",
