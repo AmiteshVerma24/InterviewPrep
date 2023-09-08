@@ -1,6 +1,6 @@
 package Questions.Searching;
 
-public class guess_number {
+ class guess_number {
     public static void main(String[] args) {
         int pick = 60;
         int num = 100;

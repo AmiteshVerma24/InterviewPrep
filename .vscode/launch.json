@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "search_in_rotated_array",
+            "request": "launch",
+            "mainClass": "Questions.Searching.search_in_rotated_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "search_insert_position",
             "request": "launch",
             "mainClass": "Questions.Searching.search_insert_position",

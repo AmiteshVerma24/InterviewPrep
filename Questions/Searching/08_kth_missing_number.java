@@ -1,6 +1,6 @@
 package Questions.Searching;
 // https://leetcode.com/problems/kth-missing-positive-number/
-public class kth_missing_number {
+ class kth_missing_number {
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5,6,7,8,10,11,13};
         int k = 2;

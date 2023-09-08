@@ -3,7 +3,7 @@ package Questions.Searching;
 import java.util.Arrays;
 
 // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
-public class two_sum_array_is_sorted {
+ class two_sum_array_is_sorted {
     public static void main(String[] args) {
         int [] numbers = {2,7,11,15};
         int target = 9;

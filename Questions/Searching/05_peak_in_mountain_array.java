@@ -1,6 +1,6 @@
 package Questions.Searching;
 // https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
-public class peak_in_mountain_array {
+ class peak_in_mountain_array {
     public static void main(String[] args) {
         int arr[] = {0,1,2,3,4,5,6,8,7,6,5,4,3,2,1};
         // Expected output:- 7

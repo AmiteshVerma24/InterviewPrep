@@ -1,19 +1,19 @@
 package Questions.Searching;
 
-public class floor {
+class ceil {
     public static void main(String[] args) {
         int[] nums = {1, 4, 15, 19, 23, 26, 33, 45, 78, 99, 101};
-        int target = 25;
-        int index = find_floor(nums, target);
+        int target = 102;
+        int index = find_ceil(nums, target);
         System.out.println("The index is: "+index);
     }
-    static int find_floor(int[] arr, int target){
+    static int find_ceil(int[] arr, int target){
         // If array is empty
         if(arr.length < 1){
             return -1;
         }
-        // If the smallest element in the array is larger than target
-        if(arr[0] > target){
+        // If the largest element in the array is smallar than target
+        if(arr[arr.length - 1] < target){
             return - 1;
         }
         int start = 0;
@@ -25,13 +25,13 @@ public class floor {
                 return mid;
             }
             else if(arr[mid] > target){
-                end = mid -1;
+                end = mid - 1;
             }
             else{
                 start = mid + 1;
             }
             
         }
-        return end;
+        return start;
     }
 }

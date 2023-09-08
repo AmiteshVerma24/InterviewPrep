@@ -3,7 +3,7 @@ package Questions.Searching;
 
 import java.util.Arrays;
 
-public class first_last_position {
+ class first_last_position {
     public static void main(String[] args) {
         int [] nums = {3,5,6,7,7,7,7,7,7,8,9,10};
         int [] ans = new int[2];
