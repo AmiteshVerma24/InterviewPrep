@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "cyclic_sort",
+            "request": "launch",
+            "mainClass": "Algorithms.Sorting.cyclic_sort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "insertion_sort",
+            "request": "launch",
+            "mainClass": "Algorithms.Sorting.insertion_sort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "rotation_count",
+            "request": "launch",
+            "mainClass": "Questions.Searching.rotation_count",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "search_in_rotated_array",
             "request": "launch",
             "mainClass": "Questions.Searching.search_in_rotated_array",
