@@ -1,6 +1,6 @@
 package Questions.Searching;
 
-public class infiniteArray {
+ class infiniteArray {
     public static void main(String[] args) {
         // We can consider a normal array as an infinite array if the size is not known i.e we cant use .length method
         int [] nums = {3, 5, 7, 9, 10, 90, 100, 110, 140, 160, 170};

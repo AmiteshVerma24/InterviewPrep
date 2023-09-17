@@ -1,6 +1,6 @@
 package Questions.Searching;
 // https://leetcode.com/problems/sqrtx/
-public class sqrt_of_num {
+ class sqrt_of_num {
     public static void main(String[] args) {
         int num = 2147395599;
         System.out.println(binary_search_sqrt(num));

@@ -1,6 +1,6 @@
 package Questions.Searching;
 
-public class valid_perfect_square {
+ class valid_perfect_square {
     public static void main(String[] args) {
         int number = 16;
         if(isPerfectSquare(number)) System.out.println("Is a perfect square!");

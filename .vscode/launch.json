@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "set_mismatch",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.set_mismatch",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "find_duplicates",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.find_duplicates",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "elements_disappeared_from_array",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.elements_disappeared_from_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "missing_number",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.missing_number",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "cyclic_sort",
+            "request": "launch",
+            "mainClass": "Algorithms.Sorting.cyclic_sort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "insertion_sort",
+            "request": "launch",
+            "mainClass": "Algorithms.Sorting.insertion_sort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "rotation_count",
+            "request": "launch",
+            "mainClass": "Questions.Searching.rotation_count",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "search_in_rotated_array",
+            "request": "launch",
+            "mainClass": "Questions.Searching.search_in_rotated_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "search_insert_position",
             "request": "launch",
             "mainClass": "Questions.Searching.search_insert_position",

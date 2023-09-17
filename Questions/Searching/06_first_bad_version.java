@@ -1,6 +1,6 @@
 package Questions.Searching;
 // https://leetcode.com/problems/first-bad-version/description/
-public class first_bad_version {
+ class first_bad_version {
     public static void main(String[] args) {
         int number_of_version = 1000000;
 
