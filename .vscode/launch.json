@@ -6,6 +6,216 @@
     "configurations": [
         {
             "type": "java",
+            "name": "set_mismatch",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.set_mismatch",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "find_duplicates",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.find_duplicates",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "elements_disappeared_from_array",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.elements_disappeared_from_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "missing_number",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.missing_number",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "cyclic_sort",
+            "request": "launch",
+            "mainClass": "Algorithms.Sorting.cyclic_sort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "insertion_sort",
+            "request": "launch",
+            "mainClass": "Algorithms.Sorting.insertion_sort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "rotation_count",
+            "request": "launch",
+            "mainClass": "Questions.Searching.rotation_count",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "search_in_rotated_array",
+            "request": "launch",
+            "mainClass": "Questions.Searching.search_in_rotated_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "search_insert_position",
+            "request": "launch",
+            "mainClass": "Questions.Searching.search_insert_position",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "kth_missing_number",
+            "request": "launch",
+            "mainClass": "Questions.Searching.kth_missing_number",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "valid_perfect_square",
+            "request": "launch",
+            "mainClass": "Questions.Searching.valid_perfect_square",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "two_sum_array_is_sorted",
+            "request": "launch",
+            "mainClass": "Questions.Searching.two_sum_array_is_sorted",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "first_bad_version",
+            "request": "launch",
+            "mainClass": "Questions.Searching.first_bad_version",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "guess_number",
+            "request": "launch",
+            "mainClass": "Questions.Searching.guess_number",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "sqrt_of_num",
+            "request": "launch",
+            "mainClass": "Questions.Searching.sqrt_of_num",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "peak_in_mountain_array",
+            "request": "launch",
+            "mainClass": "Questions.Searching.peak_in_mountain_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "first_last_position",
+            "request": "launch",
+            "mainClass": "Questions.Searching.first_last_position",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "InfiniteArray",
+            "request": "launch",
+            "mainClass": "Questions.Searching.InfiniteArray",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "infiniteArray",
+            "request": "launch",
+            "mainClass": "Questions.Searching.infiniteArray",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "floor",
+            "request": "launch",
+            "mainClass": "Questions.Searching.floor",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "ceil",
+            "request": "launch",
+            "mainClass": "Questions.Searching.ceil",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "binary_search",
+            "request": "launch",
+            "mainClass": "Algorithms.Searching.binary_search",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "checkPalindrome",
+            "request": "launch",
+            "mainClass": "Questions.Functions_in_Java.checkPalindrome",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "printPrimeNumbers",
+            "request": "launch",
+            "mainClass": "Questions.Functions_in_Java.printPrimeNumbers",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pythagorean_triplet",
+            "request": "launch",
+            "mainClass": "Questions.Functions_in_Java.pythagorean_triplet",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "graph",
+            "request": "launch",
+            "mainClass": "graph",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "sorting_algorithms",
+            "request": "launch",
+            "mainClass": "Algorithms.sorting_algorithms",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "stack",
+            "request": "launch",
+            "mainClass": "stack",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Launch graph",
+            "request": "launch",
+            "mainClass": "Graphs.graph",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Launch binary_search_tree",
+            "request": "launch",
+            "mainClass": "Trees.binary_search_tree",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "Launch binary_search_tree",
             "request": "launch",
             "mainClass": "binary_search_tree",
