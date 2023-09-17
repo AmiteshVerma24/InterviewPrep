@@ -11,8 +11,9 @@ public class cyclic_sort {
         int index = 0;
         while(index < arr.length){
             // If not at correct index swap
-            if(arr[index] != index+1){
-                swap(arr, index, arr[index] - 1);
+            int correct_index = arr[index] - 1;
+            if(arr[index] != arr[correct_index]){
+                swap(arr, index, correct_index);
             }
             // If at correct index move to next index
             else{
