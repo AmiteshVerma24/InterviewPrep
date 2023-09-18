@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "intersection_of_two_arrays",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.intersection_of_two_arrays",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "third_maximum_array",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.third_maximum_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "merge_sorted_array",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.merge_sorted_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "contains_duplicates",
+            "request": "launch",
+            "mainClass": "Questions.Sorting.contains_duplicates",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "set_mismatch",
             "request": "launch",
             "mainClass": "Questions.Sorting.set_mismatch",
