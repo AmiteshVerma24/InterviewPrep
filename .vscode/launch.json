@@ -6,6 +6,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pattern17",
+            "request": "launch",
+            "mainClass": "Pattern.pattern17",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pattern30",
+            "request": "launch",
+            "mainClass": "Pattern.pattern30",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pattern28",
+            "request": "launch",
+            "mainClass": "Pattern.pattern28",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pattern5",
+            "request": "launch",
+            "mainClass": "Pattern.pattern5",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pattern4",
+            "request": "launch",
+            "mainClass": "Pattern.pattern4",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pattern3",
+            "request": "launch",
+            "mainClass": "Pattern.pattern3",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pattern1",
+            "request": "launch",
+            "mainClass": "Pattern.pattern1",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pattern2",
+            "request": "launch",
+            "mainClass": "Pattern.pattern2",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "pattern",
+            "request": "launch",
+            "mainClass": "Pattern.pattern",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "defanging_address",
+            "request": "launch",
+            "mainClass": "Questions.Strings.defanging_address",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "rotate_array",
+            "request": "launch",
+            "mainClass": "Questions.Arrays.rotate_array",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "sort_colours",
+            "request": "launch",
+            "mainClass": "Questions.Arrays.sort_colours",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "basics_of_strings",
+            "request": "launch",
+            "mainClass": "Questions.Strings.basics_of_strings",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "intersection_of_two_arrays",
             "request": "launch",
             "mainClass": "Questions.Sorting.intersection_of_two_arrays",
