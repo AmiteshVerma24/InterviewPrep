@@ -6,6 +6,181 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LinearSearchOnMultipleOccurrences",
+            "request": "launch",
+            "mainClass": "Recursion.Arrays.LinearSearchOnMultipleOccurrences",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "LinearSearch",
+            "request": "launch",
+            "mainClass": "Recursion.Arrays.LinearSearch",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "FindIfArrayIsSorted",
+            "request": "launch",
+            "mainClass": "Recursion.Arrays.FindIfArrayIsSorted",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "CountNumberOfSteps",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.CountNumberOfSteps",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "CountNumberOfZeros",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.CountNumberOfZeros",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Palindrome",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.Palindrome",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "ReverseANumber",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.ReverseANumber",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "ProductOfDigits",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.ProductOfDigits",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "SumOfDigits",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.SumOfDigits",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "SumOfNumber",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.SumOfNumber",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "FactorialOfANumber",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.FactorialOfANumber",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Print1toN",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.Print1toN",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "PrintNto1",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.PrintNto1",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "PrintNto1",
+            "request": "launch",
+            "mainClass": "Recursion.PrintNto1",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Factors",
+            "request": "launch",
+            "mainClass": "Factors",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "FindSqrt",
+            "request": "launch",
+            "mainClass": "FindSqrt",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Sieve",
+            "request": "launch",
+            "mainClass": "Sieve",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "IsPrime",
+            "request": "launch",
+            "mainClass": "IsPrime",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "FindMaxSumNotDivisiblebyFour",
+            "request": "launch",
+            "mainClass": "FindMaxSumNotDivisiblebyFour",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "nthMagicNumber",
+            "request": "launch",
+            "mainClass": "nthMagicNumber",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "FindIthBitpublic",
+            "request": "launch",
+            "mainClass": "FindIthBitpublic",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "NonContaryNumber",
+            "request": "launch",
+            "mainClass": "NonContaryNumber",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "FindUniqueInArray",
+            "request": "launch",
+            "mainClass": "FindUniqueInArray",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "OddOrEven",
+            "request": "launch",
+            "mainClass": "OddOrEven",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "maximum_value_at_given_index",
+            "request": "launch",
+            "mainClass": "Questions.Searching.maximum_value_at_given_index",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "pattern17",
             "request": "launch",
             "mainClass": "Pattern.pattern17",
