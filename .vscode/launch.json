@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RemoveConsecutiveDuplicates",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.RemoveConsecutiveDuplicates",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Maths",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.Maths",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "GeekonacciNumber",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.GeekonacciNumber",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "SelectionSort",
+            "request": "launch",
+            "mainClass": "Recursion.Pattern.SelectionSort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "Recursion.Pattern.BubbleSort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Triangle",
+            "request": "launch",
+            "mainClass": "Recursion.Pattern.Triangle",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "LeangthOfStringRecursion",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.LeangthOfStringRecursion",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "SpecialFibonacci",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.SpecialFibonacci",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "FindCapitalLetter",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.FindCapitalLetter",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "RecursiveFindMaxMin",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.RecursiveFindMaxMin",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "SumTriangle",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.SumTriangle",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "LinearSearchOnMultipleOccurrences",
             "request": "launch",
             "mainClass": "Recursion.Arrays.LinearSearchOnMultipleOccurrences",
