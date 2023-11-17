@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumberPad",
+            "request": "launch",
+            "mainClass": "Recursion.Strings.NumberPad",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "CountNumberOfPermutationsOfString",
+            "request": "launch",
+            "mainClass": "Recursion.Strings.CountNumberOfPermutationsOfString",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "StringPermutation",
+            "request": "launch",
+            "mainClass": "Recursion.Strings.StringPermutation",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "FindSubsetsOfString",
+            "request": "launch",
+            "mainClass": "Recursion.SubsetsSubsequence.FindSubsetsOfString",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "SkipStringIfNotInRequiredString",
+            "request": "launch",
+            "mainClass": "Recursion.Subsets.SkipStringIfNotInRequiredString",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "RemoveApple",
+            "request": "launch",
+            "mainClass": "Recursion.Subsets.RemoveApple",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "RemoveA",
+            "request": "launch",
+            "mainClass": "Recursion.Subsets.RemoveA",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "quick_sort",
+            "request": "launch",
+            "mainClass": "Algorithms.Sorting.quick_sort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "merge_sort",
+            "request": "launch",
+            "mainClass": "Algorithms.Sorting.merge_sort",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "RemoveConsecutiveDuplicates",
             "request": "launch",
             "mainClass": "Recursion.Easy.RemoveConsecutiveDuplicates",
