@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AllPathsPrintMatrix",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.AllPathsPrintMatrix",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "AllPathsIncluded",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.AllPathsIncluded",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "PathWithObstacle",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.PathWithObstacle",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "NumberOfPathsWithDiagonal",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.NumberOfPathsWithDiagonal",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "PrintThePaths",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.PrintThePaths",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "NumberOfPaths",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.NumberOfPaths",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "AllPossiblePalindromicPartition",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.AllPossiblePalindromicPartition",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "AllPossiblePalindromicStrings",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.AllPossiblePalindromicStrings",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "PowerSet",
+            "request": "launch",
+            "mainClass": "Recursion.Easy.PowerSet",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "DiceProblem",
+            "request": "launch",
+            "mainClass": "Recursion.Strings.DiceProblem",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "NumberPad",
             "request": "launch",
             "mainClass": "Recursion.Strings.NumberPad",
