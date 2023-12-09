@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SinglyLinkedList",
+            "request": "launch",
+            "mainClass": "DataStructures.LinkedList.SinglyLinkedList",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "CombinationSum",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.CombinationSum",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "SinglyLinkedList",
+            "request": "launch",
+            "mainClass": "SinglyLinkedList",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "SkipStringIfNotInRequiredString",
+            "request": "launch",
+            "mainClass": "Recursion.Strings.SkipStringIfNotInRequiredString",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "RemoveA",
+            "request": "launch",
+            "mainClass": "Recursion.Strings.RemoveA",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "WordSearch",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.WordSearch",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "NQueens",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.NQueens",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "AllPathsPrintMatrix",
             "request": "launch",
             "mainClass": "Recursion.Mazes.AllPathsPrintMatrix",

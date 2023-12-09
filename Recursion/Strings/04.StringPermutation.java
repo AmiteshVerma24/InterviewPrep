@@ -19,17 +19,17 @@ class StringPermutation {
             print_permutation(first_substring + un_processed.charAt(0) + second_substring, un_processed.substring(1));
         }
     }
-    static List<String> return_list_permutation(String processed, String un_processed){
+    static List<String> return_list_permutation(String un_processed, String processed){
         List<String> lst = new ArrayList<>();
-        if(un_processed.isEmpty()){
-            lst.add(processed);
+        // When our unprocessed string becomes empty
+        if(processed == "") {
+            lst.add(un_processed);
             return lst;
         }
-        for(int i = 0 ; i <= processed.length() ; i++){
-            String first = processed.substring(0, i);
-            String second = processed.substring(i , processed.length());
-            lst.addAll(return_list_permutation(first + un_processed.charAt(0) + second, un_processed.substring(1)));
-        }
+        // We take the element
+        lst.addAll(return_list_permutation(un_processed + processed.charAt(0), processed.substring(1)));
+        // We don't take the element
+        lst.addAll(return_list_permutation(un_processed, processed.substring(1)));
         return lst;
     }
 }
