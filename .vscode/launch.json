@@ -6,6 +6,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Question1",
+            "request": "launch",
+            "mainClass": "DataStructures.LinkedList.LinkedListQuestions.Question1",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "PerfectSquare",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.PerfectSquare",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "BeautifulArrangements",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.BeautifulArrangements",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "MaxGoldPath",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.MaxGoldPath",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "DoublyLinkedList",
+            "request": "launch",
+            "mainClass": "DataStructures.LinkedList.DoublyLinkedList",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "ThePowerSum",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.ThePowerSum",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Hunter",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.Hunter",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "Hack1",
+            "request": "launch",
+            "mainClass": "Recursion.Mazes.Hack1",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "PowXN",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.PowXN",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "IncreasingNumbers",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.IncreasingNumbers",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "CountGoodNumbers",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.CountGoodNumbers",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "KthElementOfGrammar",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.KthElementOfGrammar",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "KthElementOfBinaryNumber",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.KthElementOfBinaryNumber",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
+            "name": "TargetSum",
+            "request": "launch",
+            "mainClass": "Recursion.Medium.TargetSum",
+            "projectName": "learn_27cbdc8"
+        },
+        {
+            "type": "java",
             "name": "SinglyLinkedList",
             "request": "launch",
             "mainClass": "DataStructures.LinkedList.SinglyLinkedList",
